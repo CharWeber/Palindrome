@@ -18,6 +18,12 @@ namespace Palindrome.Tests
       Phrase testPhrase = new Phrase();
       Assert.AreEqual(true, testPhrase.IsPalindrome("RaceCar"));
     }
+    [TestMethod]
+    public void IsPalindrome_RemoveSpaces_True()
+    {
+      Phrase testPhrase = new Phrase();
+      Assert.AreEqual(true, testPhrase.IsPalindrome("taco cat taco cat"));
+    }
   }
 }
 
