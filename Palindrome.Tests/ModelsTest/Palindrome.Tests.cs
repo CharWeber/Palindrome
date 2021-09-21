@@ -12,6 +12,12 @@ namespace Palindrome.Tests
       Phrase testPhrase = new Phrase();
       Assert.AreEqual(true, testPhrase.IsPalindrome("racecar"));
     }
+    [TestMethod]
+    public void IsPalindrome_ConvertsAllCharToLowercase_True()
+    {
+      Phrase testPhrase = new Phrase();
+      Assert.AreEqual(true, testPhrase.IsPalindrome("RaceCar"));
+    }
   }
 }
 
